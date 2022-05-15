@@ -17,6 +17,7 @@ struct v2f
     float4 vertex : SV_POSITION;
 };
 
+//简单的写入
 v2f vert (appdata v)
 {
     v2f o;
@@ -24,7 +25,10 @@ v2f vert (appdata v)
     o.uv = TRANSFORM_TEX(v.uv, _MainTex);
     return o;
 }
+//简单的声明函数
 float3 ProcessFrag(float2 uv);
+
+//简单的写入uv 
 float4 frag(v2f i) : SV_Target{
 	return float4(ProcessFrag(i.uv),1.0);
 }

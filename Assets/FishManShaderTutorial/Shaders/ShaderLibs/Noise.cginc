@@ -70,7 +70,7 @@ float PNoise( in float3 p )
 //    return float3(a+(b-a)*u.x+(c-a)*u.y+(a-b-c+d)*u.x*u.y,
 //                6.0*f*(1.0-f)*(float2(b-a,c-a)+(a-b-c+d)*u.yx));
 //}
-// ´øµ¼ÊýµÄNoiseµÄÍÆµ¼Çë²Î¿¼MiloµÄ https://stackoverflow.com/questions/4297024/3d-perlin-Noise-analytical-derivative
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Noiseï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Î¿ï¿½Miloï¿½ï¿½ https://stackoverflow.com/questions/4297024/3d-perlin-Noise-analytical-derivative
 float3 Noised( in float2 p )
 {
     float2 i = floor( p );
