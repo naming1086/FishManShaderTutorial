@@ -33,13 +33,19 @@ Shader "FishManShaderTutorial/2DSnow"{
 			float3 SnowSingleLayer(float2 uv,float layer){
 				fixed3 acc = fixed3(0.0,0.0,0.0);//让雪花的大小变化
 				uv = uv * (2.0+layer);//透视视野变大效果
-			    float xOffset = uv.y * (((Hash11(layer)*2-1.)*0.5+1.)*XSPEED);//增加x轴移动
+
+				//左右上下偏移
+			    float xOffset = uv.y * ((Hash11(layer)*2.0-1.0)*XSPEED);//是整体偏移来的增加x轴移动
 			    float yOffset = (YSPEED*ftime);//y轴下落过程
 				uv += fixed2(xOffset,yOffset);
+
+				//每个独立的id 然后中心为 0,0
 				float2 rgrid = Hash22(floor(uv)+(31.1759*layer));
 				uv = frac(uv);
 				uv -= (rgrid*2-1.0) * 0.35;
 				uv -=0.5;
+
+				//
 				float r = length(uv);
 				float circleSize = 0.05*(1.0+0.3*sin(ftime*SIZE_RATE));//让大小变化点
 				float val = smoothstep(circleSize,-circleSize,r);
