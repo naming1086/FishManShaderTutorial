@@ -97,7 +97,7 @@ Shader "FishManShaderTutorial/2DLava"{
 				float val = FlowFBM(uv);
 				val = Remap(0.,1.,0.6,1.,val);
 				float3 col = Blackbody(val);
-				return col;
+				return val;
 			}
 	    ENDCG
 	}//end pass

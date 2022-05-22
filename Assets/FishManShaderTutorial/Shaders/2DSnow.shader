@@ -31,15 +31,15 @@ Shader "FishManShaderTutorial/2DSnow"{
 			float LAYERS;
 
 			float3 SnowSingleLayer(float2 uv,float layer){
-				fixed3 acc = fixed3(0.0,0.0,0.0);//ÈÃÑ©»¨µÄ´óĞ¡±ä»¯
-				uv = uv * (2.0+layer);//Í¸ÊÓÊÓÒ°±ä´óĞ§¹û
+				fixed3 acc = fixed3(0.0,0.0,0.0);//è®©é›ªèŠ±çš„å¤§å°å˜åŒ–
+				uv = uv * (2.0+layer);//é€è§†è§†é‡å˜å¤§æ•ˆæœ
 
-				//×óÓÒÉÏÏÂÆ«ÒÆ
-			    float xOffset = uv.y * ((Hash11(layer)*2.0-1.0)*XSPEED);//ÊÇÕûÌåÆ«ÒÆÀ´µÄÔö¼ÓxÖáÒÆ¶¯
-			    float yOffset = (YSPEED*ftime);//yÖáÏÂÂä¹ı³Ì
+				//å·¦å³ä¸Šä¸‹åç§»
+			    float xOffset = uv.y * ((Hash11(layer)*2.0-1.0)*XSPEED);//æ˜¯ä¸åŒå±‚æ•´ä½“åç§»æ¥çš„å¢åŠ xè½´ç§»åŠ¨
+			    float yOffset = (YSPEED*ftime);//yè½´ä¸‹è½è¿‡ç¨‹
 				uv += fixed2(xOffset,yOffset);
 
-				//Ã¿¸ö¶ÀÁ¢µÄid È»ºóÖĞĞÄÎª 0,0
+				//æ¯ä¸ªç‹¬ç«‹çš„id ç„¶åä¸­å¿ƒä¸º 0,0
 				float2 rgrid = Hash22(floor(uv)+(31.1759*layer));
 				uv = frac(uv);
 				uv -= (rgrid*2-1.0) * 0.35;
@@ -47,7 +47,7 @@ Shader "FishManShaderTutorial/2DSnow"{
 
 				//
 				float r = length(uv);
-				float circleSize = 0.05*(1.0+0.3*sin(ftime*SIZE_RATE));//ÈÃ´óĞ¡±ä»¯µã
+				float circleSize = 0.05*(1.0+0.3*sin(ftime*SIZE_RATE));//è®©å¤§å°å˜åŒ–ç‚¹
 				float val = smoothstep(circleSize,-circleSize,r);
 				float3 col = float3(val,val,val)* rgrid.x ;
 				return col;
