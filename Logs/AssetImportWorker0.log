@@ -1,76 +1,218 @@
 Using pre-set license
-Built from '2020.3/china_unity/release' branch; Version is '2020.3.23f1c1 (67850fddc0e1) revision 6784271'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home China; OS build 22000.613; Version 2009; 64bit' Language: 'zh' Physical Memory: 16300 MB
+Built from '2020.3/staging' branch; Version is '2020.3.26f1 (7298b473bc1a) revision 7510196'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Professional' Language: 'zh' Physical Memory: 32694 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.23f1c1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/GithubCode/FishManShaderTutorial
+E:/GitHub/FishManShaderTutorial
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55782
-Successfully changed project path to: D:/GithubCode/FishManShaderTutorial
-D:/GithubCode/FishManShaderTutorial
+55447
+Successfully changed project path to: E:/GitHub/FishManShaderTutorial
+E:/GitHub/FishManShaderTutorial
 Using Asset Import Pipeline V2.
-AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 36.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 23.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.23f1c1 (67850fddc0e1)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.23f1c1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/GithubCode/FishManShaderTutorial/Assets
+Initialize engine version: 2020.3.26f1 (7298b473bc1a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/GitHub/FishManShaderTutorial/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   30.0.14.7280
+    VRAM:     3955 MB
+    Driver:   30.0.14.9613
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1c1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.23f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.23f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011694 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001374 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.09 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 22.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.806 seconds
+- Completed reload, in  0.373 seconds
 Domain Reload Profiling:
-	ReloadAssembly (806ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (373ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (535ms)
-			LoadAssemblies (115ms)
+		EndReloadAssembly (286ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (165ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (191ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (108ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (90ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				RefreshPlugins (22ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (55ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007225 seconds.
+Registered in 0.001843 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (678ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1544 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 73.3 MB.
+System memory in use after: 73.4 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1976.
+Total: 4.231700 ms (FindLiveObjects: 0.322400 ms CreateObjectMapping: 0.115000 ms MarkObjects: 3.722000 ms  DeleteObjects: 0.071200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/ShaderlabVSCode
+  artifactKey: Guid(2d0e746b7796d4747adb6196d62022bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode using Guid(2d0e746b7796d4747adb6196d62022bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d57a5c4a3bfc254ee1f4e459ec2b569') in 0.005802 seconds 
+  Import took 0.008625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.089664 seconds.
+  path: Assets/ShaderlabVSCode/VSCodePlugin
+  artifactKey: Guid(a73c056810cac4a4eb1d0a5bd6fa3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode/VSCodePlugin using Guid(a73c056810cac4a4eb1d0a5bd6fa3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ce62822c9f984bfac48b6350ca7eaa') in 0.001744 seconds 
+  Import took 0.003876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.891148 seconds.
+  path: Assets/ShaderlabVSCode/ScriptTemplates
+  artifactKey: Guid(619570ddd1fc44e1b9a3cf9ec95e0c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode/ScriptTemplates using Guid(619570ddd1fc44e1b9a3cf9ec95e0c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9b4d2f1ea0cbd0cc059460742a38cb') in 0.001812 seconds 
+  Import took 0.004013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.774197 seconds.
+  path: Assets/ShaderlabVSCode/Editor
+  artifactKey: Guid(0afa6ff16dd1c4dfa8064e9646f0b788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode/Editor using Guid(0afa6ff16dd1c4dfa8064e9646f0b788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea02932afd0d575d4028d8f2f153dc8') in 0.001707 seconds 
+  Import took 0.003817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.586341 seconds.
+  path: Assets/ShaderlabVSCode/Documents
+  artifactKey: Guid(56c22398c44c7466ebe1ef4c03409cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode/Documents using Guid(56c22398c44c7466ebe1ef4c03409cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea5dfa42d5b030491e4496caea04f64') in 0.001592 seconds 
+  Import took 0.003541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.797894 seconds.
+  path: Assets/ShaderlabVSCode/Documents/Manual.pdf
+  artifactKey: Guid(2b231f91ea9e14041991228349e094c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ShaderlabVSCode/Documents/Manual.pdf using Guid(2b231f91ea9e14041991228349e094c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25e27670576028919a66a4a57608c75') in 0.018319 seconds 
+  Import took 0.020513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.980266 seconds.
+  path: Assets/FishManShaderTutorial
+  artifactKey: Guid(b1ad08095cd15ba4dbebd3d4ad348b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FishManShaderTutorial using Guid(b1ad08095cd15ba4dbebd3d4ad348b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c36b8854a7b8a2946bbd37b835a782') in 0.001672 seconds 
+  Import took 0.003611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.097528 seconds.
+  path: Assets/FishManShaderTutorial/Scene
+  artifactKey: Guid(b7e026b109728ed46a70c048abe74c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FishManShaderTutorial/Scene using Guid(b7e026b109728ed46a70c048abe74c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebb3a2d32c0e5332efe8233044e4313') in 0.001720 seconds 
+  Import took 0.003682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.372828 seconds.
+  path: Assets/FishManShaderTutorial/Scene/09 RaymarchSimpleScene.unity
+  artifactKey: Guid(43600a3f40e6a364c931ad227f217c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FishManShaderTutorial/Scene/09 RaymarchSimpleScene.unity using Guid(43600a3f40e6a364c931ad227f217c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '371e5b401611e53233ea760d8f27dd9e') in 0.002005 seconds 
+  Import took 0.004019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.451898 seconds.
+  path: Assets/FishManShaderTutorial/Scene/09 RaymarchMergeRaster.unity
+  artifactKey: Guid(8dbfefe4a4aecc44dab1b59ef694741d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FishManShaderTutorial/Scene/09 RaymarchMergeRaster.unity using Guid(8dbfefe4a4aecc44dab1b59ef694741d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ff032816729d1dbc85745bb07ab5dd4') in 0.001968 seconds 
+  Import took 0.003990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.229867 seconds.
+  path: Assets/FishManShaderTutorial/Scene/09 RaymarchFramework.unity
+  artifactKey: Guid(dba87633ca7a3b843b37a6e97dd947f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FishManShaderTutorial/Scene/09 RaymarchFramework.unity using Guid(dba87633ca7a3b843b37a6e97dd947f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85ec9febd31445232aeac312878124b') in 0.001874 seconds 
+  Import took 0.003945 seconds .
+

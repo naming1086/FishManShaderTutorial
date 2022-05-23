@@ -125,7 +125,7 @@ Shader "FishManShaderTutorial/RaymarchMergeRaster" {
 					col = ShadingBG(rd,pos,nor);
 				}
 				//检测Unity中场景的z值时候小于raymarch场景中的t值,类似于ztest
-				if(rz>sceneDep){
+				if(rz>sceneDep){ //类似ztest
 					col = sceneCol;   
 					rz = sceneDep;
 				}

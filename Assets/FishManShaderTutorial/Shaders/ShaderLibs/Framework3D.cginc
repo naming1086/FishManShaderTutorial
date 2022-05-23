@@ -25,6 +25,7 @@ v2f vert(appdata_img v) {
     o.uv = v.texcoord;
     o.uv_depth = v.texcoord;
 
+    //射线的方式 基本上大项目很难看到这种写法了
 #if UNITY_UV_STARTS_AT_TOP
     if (_MainTex_TexelSize.y < 0)
         o.uv_depth.y = 1 - o.uv_depth.y;
@@ -71,8 +72,8 @@ void MergeRayMarchingIntoUnity(inout float rz,inout float3 rCol, float unityDep,
 float4 ProcessRayMarch(float2 uv,float3 ro,float3 rd,inout float sceneDep,float4 sceneCol);
 
 float4 frag(v2f i) : SV_Target{
-    float depth = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, i.uv_depth));
-    depth *= length(i.interpolatedRay.xyz);
+    float depth = LinearEyeDepth(SAMPLE_DEPTH_TEXTURE(_CameraDepthTexture, i.uv_depth)); //线性的
+    depth *= length(i.interpolatedRay.xyz); //返回视口空间下的深度
     fixed4 sceneCol = tex2D(_MainTex, i.uv);
     float2 uv = i.uv * float2(_ScreenParams.x/_ScreenParams.y,1.0);
     fixed3 ro = _WorldSpaceCameraPos;
